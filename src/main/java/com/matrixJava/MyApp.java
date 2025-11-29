@@ -1,6 +1,5 @@
 package main.java.com.matrixJava;
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -22,20 +21,20 @@ public class MyApp {
 	static double scalerValue;
 	static int roboSequence = 0;
 	static boolean roboSwitch = false;
-	static Robot myRobo;
+	static Robot myRobo;  // why here if I do in main ?
 	static Scanner in = new Scanner(System.in);
 	
-	static ArrayList<ArrayList> runTimeALOAL = new ArrayList<ArrayList>();
+	static ArrayList<ArrayList> runTimeALOAL = new ArrayList<ArrayList>();// A List of ArrayLists, i think
 	static String addendName1, addendName2,factor1Name,factor2Name, minuendName,subtrahendName = null;  // 10/29/19 consider addend1Name etc.
 	static Matrix addendMx1, addendMx2, factorMx1,factorMx2, minuMx, subtraMx= null;
 
 	static int charRepToIncrement = 65;
-	static char myCurChar = (char) charRepToIncrement; // So this Should equal "A"
+	static char myCurChar = (char) charRepToIncrement; // So this Should equal "A" {{why ?}}
 
 	public static void main(String[] args) throws Exception {
 		String firstArg = "";
-		InputStringObj myInputStringObj = null;
-	     myRobo = new Robot();
+		InputStringObj myInputStringObj = null;  // defined where
+	     myRobo = new Robot();// why here if I've defined above?
 
 		if (args == null || args.length == 0) // We want null input at command line to indicate
 			firstArg = "null"; // that we want runTime data input. Switch on null
@@ -77,7 +76,7 @@ public class MyApp {
 			break;
 
 		case "-robo":
-			roboSwitch = true;
+			roboSwitch = true;  // ? which means we will run a demo automation sequence set of operations
 			break;
 
 		default:

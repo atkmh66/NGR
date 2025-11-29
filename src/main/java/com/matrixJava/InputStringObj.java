@@ -22,14 +22,15 @@ public class InputStringObj {
 		
 		String tmpStr = "";
 		String [] arrayOfStrings;
-		String mValues = "";
+		String mValues = ""; // maybe MxValue or MatrixValue
 		String mDims = "";
+		String MxDims = "";  // or should this be MatrixDimens
 		//String strValue;
 	
 		// 10/16/19 New input manner
 		Scanner in = new Scanner(System.in);
 
-		this.inputSwitch = rt_operation;
+		this.inputSwitch = rt_operation; // this referrs to ...
 		
 		/* Since we pass a switch in here we check and operate accordingly  */
 		/* Assumption:  We only send two switches                           */
